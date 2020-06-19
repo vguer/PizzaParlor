@@ -1,25 +1,41 @@
-# Webpage: Title
+# Webpage: Pizza Parlor
 
-#### What is this for, 6.x.2020
+#### Independent Project for Epicodus, 6.19.2020
 
 #### By Vanessa Guerrero
 
 ## Description
 
-The purpose of this project is to create a survey using business and user interface logic.
+This is a webpage for a pizza company where a user can order a pizza of various sizes with one or more individual toppings. It was an independent assignment for Epicodus to demonstrate knowledge of Object Oriented JavaScript where constructors and prototypes are used successfully.
 
 ## Setup/Installation Requirements
 
-* Find the repository of this application [here]() and click the green "Clone or Download Folder" to download a zip file with all its contents.
+* Find the repository of this application [here](https://github.com/vguer/PizzaParlor.git) and click the green "Clone or Download Folder" to download a zip file with all its contents.
 * Once file is downloaded, open with Visual Studio Code or the text editor of your choice to view the code.
 * To view and intereact with the webpage using Visual Studio Code, click on Terminal > New Terminal. Once a terminal opens, type "open index.html" and hit enter. This will open the page onto a browser window.
 
 
 ## Specifications
 
-**Behavior**: Program will return x if x
-  * Input: example
-  * Output: true/false
+**Behavior**: The webpage will display a pizza parlor
+  * Input: no input necessary
+  * Output: pizza parlor object: {pizza sizes: [], pizzas toppings: []}
+
+**Behavior**: User can select the size of a pizza
+  * Input: *click* medium pizza
+  * Output: medium pizza selected
+
+**Behavior**: User can choose one or more individual toppings
+  * Input: *click* anchovies
+  * Output: anchovies selected
+
+  **Behavior**: Program will calculate cost of pizza based on size of pizza selected
+  * Input: medium pizza with 1 topping
+  * Output: $15
+
+  **Behavior**: Program will collect user contact and payment information and display order confirmation upon submission.
+  * Input: {Name: Rimsha Ansie, Phone Number: 8767345567, Credit Card Number: 2024082049, Zip Code: 95671}
+  * Output: "Thank you for your order. Your pizza will be ready for pick-up shortly."
 
 ## Known Bugs
 
@@ -27,7 +43,7 @@ There are no known bugs.
 
 ## Support and contact details
 
-For feedback or concerns about this project, please contact one of the conbributors.
+For feedback or concerns about this project, please contact the author.
 
 ## Technologies Used
 
@@ -36,6 +52,7 @@ This project is created using:
 * CSS
 * JavaScript
 * JQuery
+* Bootstrap
 
 ### License
 

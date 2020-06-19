@@ -19,7 +19,7 @@ This is a webpage for a pizza company where a user can order a pizza of various 
 
 **Behavior**: The webpage will display a pizza parlor
   * Input: no input necessary
-  * Output: pizza parlor object: {pizza sizes: [], pizzas toppings: []}
+  * Output: pizza parlor objects: {pizza sizes: [], pizzas toppings: []}
 
 **Behavior**: User can select the size of a pizza
   * Input: *click* medium pizza

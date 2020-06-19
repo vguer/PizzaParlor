@@ -14,7 +14,7 @@ function Pizza(toppings, size) {
 let largePizza = {size: "large", cost: 11.00};
 let largerPizza = {size: "larger", cost: 14.00};
 
-let pizzaOrder = new Pizza(["artichoke hearts", "tofu", "cheez whizz", "hot cheetos"], ["large", "larger"]);
+let pizzaOrder = new Pizza(["cheez whizz", "hot cheetos", "sour cream"], ["large", "larger"]);
 
 
 

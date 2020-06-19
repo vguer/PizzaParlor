@@ -10,10 +10,22 @@ function Pizza(toppings, size) {
   this.size=size;
 }
 
-let pizzaOrder = new Pizza(["artichoke hearts", "tofu", "cheez whizz", "hot cheetos"], ["personal", "medium", "larger"];
+
+let largePizza = {size: "large", cost: 11.00};
+let largerPizza = {size: "larger", cost: 14.00};
+
+let pizzaOrder = new Pizza(["artichoke hearts", "tofu", "cheez whizz", "hot cheetos"], ["large", "larger"]);
 
 
 
+Pizza.prototype.cost = function () {
+  this.size += 1;
+  return this.currentId;
+}
+
+Pizza.prototype.order = function () {
+  return this.toppings + this.size;
+}
 
 // Business Logic
 
@@ -25,5 +37,4 @@ $(document).ready(function() {
 
   event.preventDefault();
 
-});
 });

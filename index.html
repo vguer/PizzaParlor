@@ -14,20 +14,28 @@
         <p><i>Probably</i> the best pizza in town!</p>
       </div>
     <form id="orderform">
-      <div class="radio">
-        <p><strong>Step 1: </strong>Choose your size!</p>
-        <label><input type="radio" value="large">Large</label>
+        <div class="radio">
+        <p><strong>Step 1: </strong>Choose your size.</p>
+        <label>
+          <input type="radio" name="size" value="large">Large
+        </label>
       </div>
       <div class="radio">
-        <label><input type="radio" value="large">Larger</label>
+        <label>
+          <input type="radio" name="size" value="larger">Larger
+        </label>
       </div>
-    
-      <label for="pizza-toppings"><strong>Step 2:</strong>Select your toppings!</label>
-        
-
-
+      </div>
+  </div>
+      <div class="form-field">
+        <p><strong>Step 2: </strong>Select your toppings.</p>
+        <input type="checkbox" name="toppings" value="cheez">Cheez Whizz<br>
+        <input type="checkbox" name="toppings" value="cheetos">Flamin' Hot Cheetos<br>
+        <input type="checkbox" name="toppings" value="sourcream">Sour Cream<br>
+      </div>
+        <button type="submit" class="btn">Submit My Order</button>
       </p>
     </form>
+    <div class="result">Order Total: <span class="cost"></span>
   </body>
-</head>
 </html>

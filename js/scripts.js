@@ -5,10 +5,16 @@
 
 */
 
+// business logic for pizza objects
 function Pizza(size, toppings) {
   this.size=size;
   this.toppings=toppings;
 }
+
+function showOrder(Pizza) {
+
+}
+
 
 let pizzaOrder = new Pizza(["size"], ["toppings"]);
 
@@ -16,11 +22,12 @@ let pizzaOrder = new Pizza(["size"], ["toppings"]);
 
 Pizza.prototype.cost = function(size) { 
 if (size === "1") {
-  return " $11"
+  this.cost = "$11";
 } else if (size === "2") {
-  return " $15"
-}
+  this.cost = "$15";
+}}
 
+console.log(Pizza.cost)
 //  Pizza.prototype.order = function () {
   //  return this.toppings + this.size;
   // }
@@ -32,12 +39,18 @@ if (size === "1") {
 
 
 // UI Logic
-$(document).ready(function() {
-  $("form#orderform").submit(function(event) {
-    event.preventDefault();
-    let size = $("input[name='size']:checked").val();
-  });
-    
 
+
+$(document).ready(function() {
+  event.preventDefault();
+  $("form#orderform").submit(function(event) {
+    cost.cost()
+    let size = $("input[name='size']:checked").val();
+    console.log(size);
+  });
+    return size;
 
 });
+
+//$(".cost").html(cost);
+

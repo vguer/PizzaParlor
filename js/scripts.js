@@ -5,21 +5,22 @@
 
 */
 
-function Pizza(toppings, size) {
+function Pizza(size, toppings) {
   this.size=size;
   this.toppings=toppings;
 }
+
 let pizzaOrder = new Pizza(["size"], ["toppings"]);
 
 
 
-Pizza.prototype.cost = function () {
-  if (size === "large") {
+Pizza.prototype.cost = function(size) { 
+if (size === "1") {
   return " $11"
-  } else if (size === "larger") {
+} else if (size === "2") {
   return " $15"
-  }
 }
+
 //  Pizza.prototype.order = function () {
   //  return this.toppings + this.size;
   // }
@@ -30,11 +31,13 @@ Pizza.prototype.cost = function () {
     //let pizzaOrder = ("input#orderform").val();
 
 
+// UI Logic
 $(document).ready(function() {
   $("form#orderform").submit(function(event) {
     event.preventDefault();
-    const sizeInput = $(".size").val();
-    let cost = Pizza.prototype.cost
+    let size = $("input[name='size']:checked").val();
+  });
+    
 
 
 });

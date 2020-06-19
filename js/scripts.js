@@ -6,35 +6,35 @@
 */
 
 function Pizza(toppings, size) {
-  this.toppings=toppings;
   this.size=size;
+  this.toppings=toppings;
 }
-
-
-let largePizza = {size: "large", cost: 11.00};
-let largerPizza = {size: "larger", cost: 14.00};
-
-let pizzaOrder = new Pizza(["cheez whizz", "hot cheetos", "sour cream"], ["large", "larger"]);
+let pizzaOrder = new Pizza(["size"], ["toppings"]);
 
 
 
 Pizza.prototype.cost = function () {
-  this.size += 1;
-  return this.currentId;
+  if (size === "large") {
+  return " $11"
+  } else if (size === "larger") {
+  return " $15"
+  }
 }
-
-Pizza.prototype.order = function () {
-  return this.toppings + this.size;
-}
-
-// Business Logic
+//  Pizza.prototype.order = function () {
+  //  return this.toppings + this.size;
+  // }
 
 
+//function attachPizzaListeners() {
+  //$("form#orderform").submit(function(event) {
+    //let pizzaOrder = ("input#orderform").val();
 
 
-// UI Logic
 $(document).ready(function() {
+  $("form#orderform").submit(function(event) {
+    event.preventDefault();
+    const sizeInput = $(".size").val();
+    let cost = Pizza.prototype.cost
 
-  event.preventDefault();
 
 });

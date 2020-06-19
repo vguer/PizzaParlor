@@ -13,29 +13,35 @@
         <h1>The Pizza Parlor</h1>
         <p><i>Probably</i> the best pizza in town!</p>
       </div>
-    <form id="orderform">
-        <div class="radio">
+      <div class="row">
+      <form id="orderform">
+      <div class="col-md-4">
+      <div class="radio">
         <p><strong>Step 1: </strong>Choose your size.</p>
         <label>
           <input type="radio" name="size" value="large">Large
         </label>
-      </div>
-      <div class="radio">
+        </div>
+        <div class="radio">
         <label>
           <input type="radio" name="size" value="larger">Larger
         </label>
+        </div>
       </div>
       </div>
-  </div>
+      <div class="col-md-4">
       <div class="form-field">
         <p><strong>Step 2: </strong>Select your toppings.</p>
         <input type="checkbox" name="toppings" value="cheez">Cheez Whizz<br>
         <input type="checkbox" name="toppings" value="cheetos">Flamin' Hot Cheetos<br>
         <input type="checkbox" name="toppings" value="sourcream">Sour Cream<br>
       </div>
+      </div>
         <button type="submit" class="btn">Submit My Order</button>
       </p>
     </form>
-    <div class="result">Order Total: <span class="cost"></span>
+    <div class="col-md-4">
+    <div id="result">Order Total: <span class="cost"></span>
+    </div>
   </body>
 </html>

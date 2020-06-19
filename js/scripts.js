@@ -11,46 +11,31 @@ function Pizza(size, toppings) {
   this.toppings=toppings;
 }
 
-function showOrder(Pizza) {
+// User Interface
+let orderTotal;
 
-}
-
-
-let pizzaOrder = new Pizza(["size"], ["toppings"]);
-
-
+//User Interface Logic
 
 Pizza.prototype.cost = function(size) { 
 if (size === "1") {
-  this.cost = "$11";
+  this.cost = " $11";
 } else if (size === "2") {
-  this.cost = "$15";
+  this.cost = " $15";
 }}
 
-console.log(Pizza.cost)
-//  Pizza.prototype.order = function () {
-  //  return this.toppings + this.size;
-  // }
-
-
-//function attachPizzaListeners() {
-  //$("form#orderform").submit(function(event) {
-    //let pizzaOrder = ("input#orderform").val();
-
+//console.log(size)
 
 // UI Logic
 
 
 $(document).ready(function() {
-  event.preventDefault();
   $("form#orderform").submit(function(event) {
-    cost.cost()
-    let size = $("input[name='size']:checked").val();
+    event.preventDefault();
+    const size = $("input[name='size']:checked").val();
     console.log(size);
+    orderTotal = new Pizza(size, ["toppings"])
+    $('#ordertotal').text(orderTotal.cost) 
   });
-    return size;
-
 });
 
-//$(".cost").html(cost);
 

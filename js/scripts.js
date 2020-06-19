@@ -32,10 +32,10 @@ $(document).ready(function() {
   $("form#orderform").submit(function(event) {
     event.preventDefault();
     const size = $("input[name='size']:checked").val();
+    const toppings = $("input:checkbox[name=toppings]:checked").val();
     console.log(size);
     orderTotal = new Pizza(size, ["toppings"])
+    console.log(toppings);
     $('#ordertotal').text(orderTotal.cost) 
   });
 });
-
-
